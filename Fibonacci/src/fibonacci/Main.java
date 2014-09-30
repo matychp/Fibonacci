@@ -15,8 +15,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(addFibonacciEvenValues(40));
-        System.out.println(addFibonacciEvenValuesBetter(40));
+        System.out.println(addFibonacciEvenValues(145));
+        System.out.println(addFibonacciEvenValuesBetter(145));
        
     }
 
