@@ -15,9 +15,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(addFibonacciEvenValues(40));
-        System.out.println(addFibonacciEvenValuesBetter(40));
-       
+        System.out.println(addFibonacciEvenValues(100));
+        System.out.println(addFibonacciEvenValuesBetter(100));
+
     }
 
     public static long addFibonacciEvenValues(int n) {
@@ -27,26 +27,6 @@ public class Main {
             if (ta % 2 == 0) {
                 suma += ta;
             }
-            t0 = t1;
-            t1 = ta;
-            ta = t1 + t0;
-        }
-        return suma;
-    }
-
-    public static long addFibonacciEvenValuesBetter(int n) {
-        int t0 = 1, t1 = 2, ta = 3;
-        long suma = t1;
-        while (ta < n) {
-            t0 = t1;
-            t1 = ta;
-            ta = t1 + t0;
-
-            t0 = t1;
-            t1 = ta;
-            ta = t1 + t0;
-
-            suma += ta;
             t0 = t1;
             t1 = ta;
             ta = t1 + t0;
